@@ -1,46 +1,43 @@
 #include <stdio.h>
-int main(){
-
+   int main(){
 
      float num1,num2,result ;
      char op ;
      
-     printf("Enter first number:");
+    printf("Enter first number:");
      scanf("%f",& num1);
-     
-     
+
     printf("Enter any operator (+,-,*/):");
      scanf(" %c",& op);
-     
-     
+
     printf("Enter second number:");
      scanf("%f",& num2);
      
     
      switch(op){
-     case '+':
+      case '+':
      result = num1 + num2 ;
-     printf("Result is %.2f",result);
+          printf("Result is %.2f",result);
      break ;
      
     case '-':
      result = num1 - num2 ;
-     printf("Result is %.2f",result);
+          printf("Result is %.2f",result);
     break ;
     
     case '*':
      result = num1 * num2 ;
-     printf("Result is %.2f",result);
+          printf("Result is %.2f",result);
     break ;
     
      case '/':
-     
+          
      if (num2 != 0){
      result = num1 /num2 ;
-     printf("Result is %.2f",result);}
+          printf("Result is %.2f",result);}
      
      else {
-     printf("Error:Divided by zero is not allowed.");}
+          printf("Error:Divided by zero is not allowed.");}
     break ;
       
       default:
